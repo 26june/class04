@@ -6,48 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Food</title>
+    <script src="./app.js"></script>
   </head>
-  <body>
-    <header>
-      <h1>Food From Around The World</h1>
-      <h2>Italy</h2>
-    </header>
-    <main>
-      <h3>Spaghetti Carbonara</h3>
-      <div class="content1">
-        <p>
-          Carbonara is a pasta dish made with eggs, hard cheese, cured pork, and
-          black pepper. The dish took its modern form and name in the middle of
-          the 20th century. The cheese is usually Pecorino Romano, parmesan, or
-          a combination of the two. Spaghetti is the most common pasta, but
-          fettuccine, rigatoni, linguine, or bucatini are also used. Normally
-          guanciale or pancetta are used for the meat component, but lardons of
-          smoked bacon are a common substitute outside Italy.
-        </p>
-        <img
-          src="https://static01.nyt.com/images/2021/02/14/dining/carbonara-horizontal/carbonara-horizontal-master768-v2.jpg?w=1280&q=75"
-          alt="Spaghetti Carbonara"
-        />
 
-        <div class="flag">
-          <div id="left"></div>
-          <div id="mid"></div>
-          <div id="right"></div>
+  <body onload="conditionalPasta()">
+    <div id="yes-content" style="visibility: visible">
+      <header>
+        <h1>
+          Food From Around The World for
+          <script>
+            document.write(name);
+          </script>
+        </h1>
+        <h2>Italy</h2>
+      </header>
+      <main>
+        <h3>Spaghetti Carbonara</h3>
+
+        <div class="content1">
+          <p>
+            Carbonara is a pasta dish made with eggs, hard cheese, cured pork,
+            and black pepper. The dish took its modern form and name in the
+            middle of the 20th century. The cheese is usually Pecorino Romano,
+            parmesan, or a combination of the two. Spaghetti is the most common
+            pasta, but fettuccine, rigatoni, linguine, or bucatini are also
+            used. Normally guanciale or pancetta are used for the meat
+            component, but lardons of smoked bacon are a common substitute
+            outside Italy.
+          </p>
+          <img
+            src="https://static01.nyt.com/images/2021/02/14/dining/carbonara-horizontal/carbonara-horizontal-master768-v2.jpg?w=1280&q=75"
+            alt="Spaghetti Carbonara"
+          />
+
+          <div class="flag">
+            <div id="left"></div>
+            <div id="mid"></div>
+            <div id="right"></div>
+          </div>
+
+          <h3>Hungry for more?</h3>
+          <p>Why not try:</p>
+          <ul>
+            <li>
+              <a href="https://samueledraper.github.io/lab-04-html/"
+                >Spanish Paella</a
+              >
+            </li>
+          </ul>
         </div>
-
-        <h3>Hungry for more?</h3>
-        <p>Why not try:</p>
-        <ul>
-          <li>
-            <a href="https://samueledraper.github.io/lab-04-html/"
-              >Spanish Paella</a
-            >
-          </li>
-        </ul>
-      </div>
-    </main>
-    <footer>
-      <p>This wesbite was designed by GJ of Breakout Room 5</p>
-    </footer>
+      </main>
+      <footer>
+        <p>This wesbite was designed by GJ of Breakout Room 5</p>
+      </footer>
+    </div>
   </body>
 </html>
