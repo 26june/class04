@@ -7,10 +7,6 @@
   list-style-type: none;
 }
 
-body {
-  margin-bottom: 40px;
-}
-
 h1 {
   margin: 20px;
   position: relative;
@@ -36,6 +32,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 5vh;
 }
 
 h3 {
@@ -89,12 +86,11 @@ p {
 }
 
 footer {
-  height: 20px;
-  padding-bottom: 20px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: rgb(255, 255, 255);
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+footer p {
+  padding: 0;
+  margin: 0;
 }
