@@ -9,7 +9,7 @@
     <script src="./app.js"></script>
   </head>
 
-  <body onload="conditionalPasta()">
+  <body">
     <div id="yes-content" style="visibility: visible">
       <header>
         <h1>
@@ -17,6 +17,8 @@
           <script>
             addName();
           </script>
+
+          <script>conditionalPasta()</script>
         </h1>
         <h2>Italy</h2>
       </header>
@@ -35,9 +37,14 @@
             outside Italy.
           </p>
           <img
+            id="pasta"
             src="https://static01.nyt.com/images/2021/02/14/dining/carbonara-horizontal/carbonara-horizontal-master768-v2.jpg?w=1280&q=75"
             alt="Spaghetti Carbonara"
           />
+
+          <script>
+            addMorePasta();
+          </script>
 
           <div class="flag">
             <div id="left"></div>

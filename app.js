@@ -20,3 +20,18 @@ function conditionalPasta(
     conditionalPasta(pasta);
   }
 }
+
+function addMorePasta() {
+  let numPasta = prompt(
+    "How many bowls of pasta do you want? Please enter a Number"
+  );
+  if (!isNaN(Number(numPasta))) {
+    let pastaImage = document.getElementById("pasta").outerHTML;
+
+    for (let i = 0; i < Number(numPasta) - 1; i++) {
+      document.write(pastaImage);
+    }
+  } else {
+    addMorePasta();
+  }
+}
